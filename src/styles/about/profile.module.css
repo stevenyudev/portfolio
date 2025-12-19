@@ -1,0 +1,39 @@
+.profile {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.profile::before {
+  background: var(--highlight-gradient);
+  content: '';
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 95%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: rotate-gradient-background 15s ease-in-out infinite;
+}
+.profile img {
+  position: relative;
+  bottom: -1rem;
+  z-index: 0;
+  max-width: 100%;
+}
+@keyframes rotate-gradient-background {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+@media (min-width: 900px) {
+  .profile img {
+    max-width: none;
+  }
+}

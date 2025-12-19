@@ -1,0 +1,6 @@
+.project-list {
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-bottom: 0.5rem;
+  justify-content: space-around;
+}

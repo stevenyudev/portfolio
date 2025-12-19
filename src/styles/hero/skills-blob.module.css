@@ -1,0 +1,129 @@
+.blob-container {
+  position: relative;
+}
+.blob {
+  position: relative;
+  width: 600px;
+  height: 550px;
+  margin-bottom: -275px;
+  --blob-transform-origin: top center;
+  --blob-transform: scale(0.45) translateY(0) rotate(0deg);
+  --blob-transform-rotate: scale(0.45) translateY(0) rotate(5deg);
+  --blob-transform-translate: scale(0.45) translateY(15%) rotate(0deg);
+  --blob-transform-translate-rotate: scale(0.45) translateY(15%) rotate(-5deg);
+  --blob-1-transform: scale(0.45) translateY(-100%) rotate(0deg);
+  --blob-1-transform-rotate: scale(0.45) translateY(-100%) rotate(5deg);
+  --blob-1: path(
+    'm392.448 59.136c35.28 18.48 63.168 52.416 73.248 89.712 10.08 37.632 2.016 78.96-9.408 115.584-11.424 36.624-26.208 68.88-49.056 93.072-22.848 24.528-53.76 40.656-92.736 71.232-38.64 30.912-86.016 76.272-134.736 82.656-48.72 6.048-99.12-26.88-123.312-72.576-23.856-46.032-21.504-104.496-30.912-161.952-9.408-57.792-30.24-114.24-20.16-165.312 10.08-50.736 51.408-95.76 101.136-107.52 49.392-12.096 107.52 9.072 157.92 21.504 50.064 12.096 92.736 15.12 128.016 33.6z'
+  );
+  --blob-2: path(
+    'm400 4c24 8 24.4 38.8 64 76 40 32 89.2 80.4 114.4 128.8 25.6 48.8 10.4 112.4-34 136-44 23.6-116.4 7.6-172 2.4-55.6-5.6-94 0-144 4-49.6 3.6-110.8 5.6-157.2-20.4-46.4-26-78.4-80-64-127.2C21.6 156.4 81.6 116 124.8 87.2 168 58.4 194 40.8 220.4 34c26.4-6.4 52.8-2.4 88.4-16C344 4.4 376-4 400 4z'
+  );
+  --blob-3: path(
+    'M276.4018 87.5717c59.309-9.2973 98.6993-98.7646 179.774-78.494 81.7192 9.1088 9.1349 156.4529 6.013 222.9289-2.7249 66.4272 13.0081 132.2001-10.1104 176.9511-22.7703 44.3052-84.3921 67.5886-141.1099 71.7317-56.2721 4.4913-108.3855-9.6632-157.8244-21.728-49.0906-12.5106-96.3493-23.2311-120.1976-53.3493C9.544 375.8422 9.0575 325.9295 16.1908 285.5592c7.182-39.9732 21.935-70.8009 20.7937-116.2003-1.1413-45.3993 2.2339-68.785 21.2669-94.2946 18.2842-23.4027 48.0958-43.1833 91.7326-32.4211 45.7438 11.511 73.569 49.4024 125.4252 45.0503Z'
+  );
+  animation: blob-shape 20s linear infinite;
+}
+.blob::before {
+  content: '';
+  position: absolute;
+  inset: -12%;
+  aspect-ratio: 1;
+  animation: rotate-gradient-background 15s ease-in-out infinite;
+  background: var(--highlight-gradient);
+}
+@media (min-width: 600px) {
+  .blob {
+    --blob-transform: scale(0.6) translateY(0) rotate(0deg);
+    --blob-transform-rotate: scale(0.6) translateY(0) rotate(5deg);
+    --blob-transform-translate: scale(0.6) translateY(15%) rotate(0deg);
+    --blob-transform-translate-rotate: scale(0.6) translateY(15%) rotate(-5deg);
+    --blob-1-transform: scale(0.6) translateY(-70%) rotate(0deg);
+    --blob-1-transform-rotate: scale(0.6) translateY(-70%) rotate(5deg);
+  }
+}
+@media (min-width: 900px) {
+  .blob-container {
+    width: 390px;
+  }
+  .blob {
+    margin-bottom: 0;
+    --blob-transform-origin: center center;
+    --blob-transform: scale(0.65) translateY(0) rotate(0deg);
+    --blob-transform-rotate: scale(0.65) translateY(0) rotate(5deg);
+    --blob-transform-translate: scale(0.65) translateY(15%) rotate(0deg);
+    --blob-transform-translate-rotate: scale(0.65) translateY(15%) rotate(-5deg);
+    --blob-1-transform: scale(0.65) translateY(-30%) rotate(0deg);
+    --blob-1-transform-rotate: scale(0.65) translateY(-30%) rotate(5deg);
+    left: -22%;
+  }
+  .blob::before {
+    inset: -18%;
+  }
+}
+@media (min-width: 1180px) {
+  .blob-container {
+    width: fit-content;
+  }
+  .blob {
+    --blob-transform: translateY(0) rotate(0deg);
+    --blob-transform-rotate: translateY(0) rotate(5deg);
+    --blob-transform-translate: translateY(15%) rotate(0deg);
+    --blob-transform-translate-rotate: translateY(15%) rotate(-5deg);
+    --blob-1-transform: var(--blob-transform);
+    --blob-1-transform-rotate: var(--blob-transform-rotate);
+    left: 0;
+  }
+  .blob::before {
+    inset: -12%;
+  }
+}
+@keyframes blob-shape {
+  0%,
+  100% {
+    transform: var(--blob-1-transform);
+  }
+  0%,
+  15%,
+  100% {
+    clip-path: var(--blob-1);
+    transform-origin: bottom center;
+  }
+  15% {
+    transform: var(--blob-1-transform-rotate);
+  }
+  25%,
+  40%,
+  75%,
+  90% {
+    clip-path: var(--blob-2);
+    transform-origin: var(--blob-transform-origin);
+  }
+  25%,
+  90% {
+    transform: var(--blob-transform-translate);
+  }
+  40%,
+  75% {
+    transform: var(--blob-transform-translate-rotate);
+  }
+  50%,
+  65% {
+    clip-path: var(--blob-3);
+    transform-origin: var(--blob-transform-origin);
+  }
+  50% {
+    transform: var(--blob-transform);
+  }
+  65% {
+    transform: var(--blob-transform-rotate);
+  }
+}
+@keyframes rotate-gradient-background {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

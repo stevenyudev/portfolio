@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--dark-translucent-grey);
+  padding: 1rem 1.25rem;
+  gap: 1.252rem;
+  position: relative;
+  left: -1.25rem;
+  right: -1.25rem;
+  width: calc(100% + 2.5rem);
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .footer {
+    padding: 1rem 2rem;
+    gap: 2rem;
+    left: -2rem;
+    right: -2rem;
+    width: calc(100% + 4rem);
+  }
+}

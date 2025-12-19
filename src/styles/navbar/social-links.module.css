@@ -1,0 +1,83 @@
+.social-links li:nth-of-type(1) .icon {
+  clip-path: url(#clip-path-github);
+  /* make sure this clip-path ID exists in your SVG defs */
+}
+
+.social-links li:nth-of-type(1) .tooltip {
+  width: 9rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-link {
+  position: relative;
+  display: block;
+}
+.icon {
+  text-decoration: none;
+  font-size: 2rem;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  overflow: hidden;
+}
+.icon::before,
+.icon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--text-color);
+  display: block;
+  transition: opacity 0.3s;
+}
+.icon::after {
+  background: var(--highlight-gradient);
+  opacity: 0;
+}
+.social-link:hover .icon::before {
+  opacity: 0;
+}
+.social-link:hover .icon::after {
+  opacity: 1;
+}
+.icon-bottom {
+  position: absolute;
+  width: 0;
+  bottom: -0.5rem;
+  border-radius: 0.125rem;
+  height: 0.25rem;
+  background: var(--highlight-gradient);
+  transition: width 0.3s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-link:hover .icon-bottom {
+  width: 2rem;
+}
+.tooltip {
+  position: absolute;
+  bottom: -2.25rem;
+  background-color: var(--mid-translucent-grey);
+  padding: 0.25rem;
+  border-radius: 0.125rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  width: 7rem;
+}
+.social-links li:nth-of-type(1) .tooltip {
+  left: 0;
+}
+.social-links li:nth-of-type(2) .tooltip {
+  width: 9rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-links li:nth-of-type(3) .tooltip {
+  right: -0.25rem;
+}
+.social-link:hover .tooltip {
+  opacity: 1;
+}

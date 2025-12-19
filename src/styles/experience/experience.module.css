@@ -1,0 +1,32 @@
+.experience-header {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+.experience-list {
+  padding-inline-start: 1rem;
+  line-height: 1.25rem;
+}
+.experience-list li {
+  margin-bottom: 1rem;
+}
+.experience-list li:last-of-type {
+  margin-bottom: 0;
+}
+.experience-list strong {
+  font-weight: 400;
+}
+.strong-tech {
+  color: var(--cyan);
+}
+.strong-figure {
+  color: var(--lilac);
+}
+@media (min-width: 900px) {
+  .experience-header {
+    align-items: center;
+  }
+  .experience-header h3 {
+    margin-bottom: 0;
+  }
+}

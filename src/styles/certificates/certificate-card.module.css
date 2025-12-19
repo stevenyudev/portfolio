@@ -1,0 +1,54 @@
+.certificate-card {
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+.certificate-images {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25rem;
+  width: 9.5rem;
+  background-color: var(--text-color);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  height: fit-content;
+}
+.img-thumbnail {
+  height: 5.5rem;
+}
+.img-platform-container {
+  height: 1.5rem;
+  padding: 0 0.5rem;
+}
+.img-platform {
+  max-height: 1.5rem;
+  max-width: 100%;
+}
+.certificate-content {
+  width: 100%;
+}
+.certificate-content > p,
+.certificate-content > p:last-of-type {
+  margin: 1rem 0 0.5rem;
+}
+p.certificate-subtitle {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+@media (min-width: 600px) {
+  .certificate-card {
+    flex-direction: row;
+  }
+  .certificate-images {
+    width: 12rem;
+  }
+}
+@media (min-width: 900px) {
+  .certificate-card {
+    width: calc(50% - 1rem);
+  }
+  .certificate-images {
+    width: 14rem;
+  }
+}

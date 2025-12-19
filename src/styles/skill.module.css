@@ -1,0 +1,46 @@
+.skill {
+  background-color: var(--mid-translucent-grey);
+  row-gap: 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 7rem;
+}
+.skill-img {
+  object-fit: contain;
+  width: 5rem;
+  height: 5rem;
+}
+.skill-pill,
+.skill-pill-fill {
+  border-radius: 1rem;
+}
+.skill-pill {
+  background-color: var(--dark-translucent-grey);
+  width: 100%;
+  position: relative;
+  line-height: 1.3rem;
+}
+.skill-pill-fill {
+  background: var(--highlight-gradient);
+  position: absolute;
+  inset: 0;
+  right: auto;
+  z-index: 0;
+}
+.skill-pill span {
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 900px) {
+  .skill {
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 8rem;
+  }
+  .skill-img {
+    width: 6rem;
+    height: 6rem;
+  }
+}

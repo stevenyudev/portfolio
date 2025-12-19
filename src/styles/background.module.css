@@ -1,0 +1,99 @@
+.background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.vertical-pattern,
+.horizontal-pattern {
+  animation-name: scroll-pattern;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.vertical-pattern {
+  animation-duration: 10s;
+}
+.vertical-opaue-pattern {
+  animation-duration: 15s;
+}
+.vertical-group {
+  fill: #b2627d;
+}
+.horizontal-pattern {
+  animation-duration: 40s;
+}
+.horizontal-opaque-pattern {
+  animation-duration: 60s;
+}
+.horizontal-secondary-pattern {
+  animation-duration: 50s;
+}
+.horizontal-group,
+.horizontal-group rect {
+  animation-duration: 11.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.horizontal-group {
+  fill: #3cd3de;
+  animation-name: h-color-change;
+}
+.horizontal-group rect {
+  transform-origin: center;
+}
+.horizontal-group rect:nth-of-type(odd) {
+  animation-name: h-scale-up;
+}
+.horizontal-group rect:nth-of-type(even) {
+  animation-name: h-scale-down;
+}
+.horizontal-opaque-pattern .horizontal-group,
+.horizontal-opaque-pattern .horizontal-group rect {
+  animation-delay: 5.75s;
+}
+.horizontal-secondary-pattern .horizontal-group,
+.horizontal-secondary-pattern .horizontal-group rect {
+  animation-delay: 2.87s;
+}
+@keyframes h-color-change {
+  0%,
+  48.5%,
+  51%,
+  100% {
+    fill: #3cd3de;
+  }
+  50% {
+    fill: #b2627d;
+  }
+}
+@keyframes h-scale-up {
+  0%,
+  48.5%,
+  51%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.2);
+  }
+}
+@keyframes h-scale-down {
+  0%,
+  48.5%,
+  51%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.8);
+  }
+}
+@keyframes scroll-pattern {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -800px); /* tile height */
+  }
+}

@@ -1,0 +1,174 @@
+.certificate-modal {
+  overflow: hidden;
+  aspect-ratio: 2/1;
+  width: 30rem;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  transition: all 0.8s;
+  position: relative;
+}
+.certificate-modal.certificate-modal-transitioning {
+  width: 100%;
+}
+.certificate-modal.certificate-modal-open {
+  width: 100%;
+  height: auto;
+  aspect-ratio: unset;
+}
+.certificate-modal-header,
+.certificate-modal-header-title,
+.modal-button-container,
+.modal-button > span,
+.modal-button-close::before,
+.modal-button-close::after,
+.certificate-modal .certificate-cards {
+  position: absolute;
+}
+.certificate-modal-header {
+  inset: 0;
+  z-index: 1;
+  text-align: center;
+}
+.certificate-modal-header-title,
+.modal-button-container {
+  top: 50%;
+  transition: all 0.8s;
+}
+.certificate-modal-header-title {
+  left: 50%;
+  transform: translate(-50%, -120%);
+  width: calc(100% - 4rem);
+}
+.certificate-modal.certificate-modal-open .certificate-modal-header,
+.certificate-modal.certificate-modal-transitioning .certificate-modal-header {
+  text-align: left;
+}
+.modal-button-container {
+  right: 50%;
+  transform: translate(50%, 30%);
+}
+.modal-button {
+  width: 10rem;
+  height: 2em;
+  transition: all 0.8s;
+}
+.modal-button > span {
+  opacity: 1;
+}
+.modal-button-close::before,
+.modal-button-close::after {
+  content: '';
+  top: 50%;
+  left: 50%;
+  background-color: var(--text-color);
+  border-radius: 0.25rem;
+  height: 0.25rem;
+  width: 1.5rem;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.modal-button-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal-button-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.modal-button-text {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s;
+}
+.certificate-modal.certificate-modal-open .modal-button,
+.certificate-modal.certificate-modal-transitioning .modal-button {
+  width: 2rem;
+  height: 2rem;
+}
+.certificate-modal.certificate-modal-open .modal-button::before,
+.certificate-modal.certificate-modal-transitioning .modal-button::before,
+.certificate-modal.certificate-modal-open .modal-button::after,
+.certificate-modal.certificate-modal-transitioning .modal-button::after {
+  width: 135%;
+}
+.certificate-modal.certificate-modal-open .modal-button .modal-button-text,
+.certificate-modal.certificate-modal-transitioning
+  .modal-button
+  .modal-button-text {
+  opacity: 0;
+}
+.certificate-modal.certificate-modal-open .modal-button-close::before,
+.certificate-modal.certificate-modal-open .modal-button-close::after,
+.certificate-modal.certificate-modal-transitioning .modal-button-close::before,
+.certificate-modal.certificate-modal-transitioning .modal-button-close::after {
+  opacity: 1;
+}
+.certificate-modal.certificate-modal-transitioning
+  .certificate-modal-header-title,
+.certificate-modal.certificate-modal-transitioning .modal-button-container {
+  top: 2rem;
+  transform: translate(0, 0);
+}
+.certificate-modal.certificate-modal-transitioning
+  .certificate-modal-header-title {
+  left: 2rem;
+  width: calc(100% - 6rem);
+}
+.certificate-modal.certificate-modal-transitioning .modal-button-container {
+  right: 2rem;
+}
+.certificate-modal.certificate-modal-open .certificate-modal-header,
+.certificate-modal.certificate-modal-open .certificate-modal-header-title,
+.certificate-modal.certificate-modal-open .modal-button-container {
+  position: relative;
+}
+.certificate-modal.certificate-modal-open .certificate-modal-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+.certificate-modal.certificate-modal-open .certificate-modal-header-title,
+.certificate-modal.certificate-modal-open .modal-button-container {
+  top: unset;
+  left: unset;
+  right: unset;
+  transform: translate(0, 0);
+}
+.certificate-modal .certificate-cards {
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.certificate-modal.certificate-modal-open .certificate-cards {
+  position: relative;
+  opacity: 1;
+}
+.certificate-modal.certificate-modal-close-start .certificate-cards {
+  opacity: 0;
+}
+@media (min-width: 600px) {
+  .certificate-modal-header,
+  .certificate-modal.certificate-modal-open .certificate-modal-header,
+  .certificate-modal.certificate-modal-transitioning .certificate-modal-header {
+    text-align: unset;
+  }
+  .certificate-modal-header-title,
+  .certificate-modal.certificate-modal-transitioning
+    .certificate-modal-header-title {
+    width: auto;
+  }
+  .certificate-modal.certificate-modal-open .modal-button,
+  .certificate-modal.certificate-modal-transitioning .modal-button {
+    top: -0.75rem;
+  }
+}
+@media (min-width: 900px) {
+  .certificate-modal {
+    margin: 4rem 0;
+  }
+}

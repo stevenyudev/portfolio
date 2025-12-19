@@ -1,0 +1,14 @@
+.about,
+.about-profile {
+  align-items: center;
+  gap: 2rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 900px) {
+  .about {
+    align-items: flex-start;
+  }
+  .about-profile {
+    margin-top: -21%;
+  }
+}

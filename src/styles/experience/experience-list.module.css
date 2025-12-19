@@ -1,0 +1,43 @@
+.experience-list-items,
+.experience-list-item-bullet {
+  position: relative;
+}
+.experience-list-item {
+  gap: 2rem;
+}
+.experience-list-item-bullet {
+  height: 100%;
+  width: 2rem;
+}
+.experience-list-item-bullet::before,
+.experience-list-item-bullet::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.experience-list-item-bullet::before {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 2rem;
+  top: 4rem;
+  background: red;
+}
+.experience-list-item:nth-of-type(odd) .experience-list-item-bullet::before {
+  background-color: var(--cyan);
+}
+.experience-list-item:nth-of-type(even) .experience-list-item-bullet::before {
+  background-color: var(--lilac);
+}
+.experience-list-item-bullet::after {
+  top: 5.75rem;
+  width: 1rem;
+  height: 100%;
+  background: var(--highlight-gradient);
+}
+.experience-list-item:nth-of-type(odd) .experience-list-item-bullet::after {
+  transform: translateX(-50%) rotate(180deg);
+}
+.experience-list-item:last-of-type .experience-list-item-bullet::after {
+  display: none;
+}

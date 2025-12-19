@@ -1,0 +1,19 @@
+.card {
+  background-color: var(--mid-translucent-grey);
+  color: var(--text-color);
+  box-shadow:
+    0.1rem 0.1rem 0.5rem 0.2rem var(--cyan),
+    0.4rem 0.4rem 0.5rem 0.25rem var(--lilac);
+  border-radius: 0.5rem;
+  margin: 2rem 0rem;
+  padding: 1.25rem;
+  width: 100%;
+}
+.card h3 {
+  margin-top: 0;
+}
+@media (min-width: 900px) {
+  .card {
+    padding: 2rem;
+  }
+}

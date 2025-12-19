@@ -1,0 +1,21 @@
+.input-label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.input-field {
+  border-radius: 0.25rem;
+  width: 100%;
+  background-color: var(--text-color);
+  color: var(--dark-grey);
+  border: 0.125rem solid var(--dark-grey);
+  min-height: 1rem;
+  padding: 0.5rem;
+}
+.input-field-error {
+  border-color: var(--error);
+}
+.input-error {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--error);
+}

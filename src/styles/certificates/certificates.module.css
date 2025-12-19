@@ -1,0 +1,9 @@
+.courses {
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .courses {
+    justify-content: space-around;
+  }
+}

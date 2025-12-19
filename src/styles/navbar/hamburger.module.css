@@ -1,0 +1,54 @@
+.hamburger {
+  height: 5.25rem;
+}
+.hamburger button {
+  aspect-ratio: 1/1;
+  padding: 0.75rem;
+}
+.hamburger button::before {
+  width: 140%;
+}
+.hamburger button::after {
+  width: 200%;
+}
+.hamburger button:hover::after {
+  transform: translateX(-100%) rotate(-45deg);
+}
+.hamburger button span,
+.hamburger button span::before,
+.hamburger button span::after {
+  content: '';
+  width: 1.5rem;
+  height: 0.25rem;
+  background-color: var(--text-color);
+  display: block;
+  border-radius: 0.25rem;
+  transition: transform 0.4s;
+}
+.hamburger button span::before,
+.hamburger button span::after {
+  position: absolute;
+}
+.hamburger button span::before {
+  transform: translateY(-0.5rem);
+}
+.hamburger button span::after {
+  transform: translateY(0.5rem) rotate(0deg);
+}
+.hamburger.open button::after {
+  transform: translateX(100%) rotate(-45deg);
+}
+.hamburger.open button span {
+  transform: rotate(135deg);
+}
+.hamburger.open button span::before {
+  transform: translateY(0rem);
+}
+.hamburger.open button span::after {
+  transform: translateY(0rem) rotate(90deg);
+}
+@media (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+}

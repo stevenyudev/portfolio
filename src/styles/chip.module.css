@@ -1,0 +1,6 @@
+.chip {
+  background: var(--highlight-gradient);
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+  font-size: 0.8rem;
+}
