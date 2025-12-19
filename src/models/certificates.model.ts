@@ -234,7 +234,7 @@ export const certificateGroups: ICertificateGroup[] = [
         courseLink:
           'https://www.semrush.com/academy/courses/semrush/semrush-seo-crash-course-with-brian-dean/',
         certificateLink:
-          'https://static.semrush.com/academy/certificates/3bb3e7c3c3/conor-crutchley_2.pdf',
+          'https://static.semrush.com/academy/certificates/3bb3e7c3c3/steven-yu_2.pdf',
         thumbnail: {
           src: SemrushBrianDeanPink,
           alt: 'Brian Dean from Semrush on a pink background',
@@ -251,7 +251,7 @@ export const certificateGroups: ICertificateGroup[] = [
       //   courseLink:
       //     'https://www.semrush.com/academy/courses/on-page-and-technical-seo-deep-dive/',
       //   certificateLink:
-      //     'https://static.semrush.com/academy/certificates/21de12546a/conor-crutchley_1.pdf',
+      //     'https://static.semrush.com/academy/certificates/21de12546a/steven-yu_1.pdf',
       //   thumbnail: {
       //     src: SemrushDMCYellow,
       //     alt: 'Semrush digital marketing certification logo on a yellow background',
@@ -266,7 +266,7 @@ export const certificateGroups: ICertificateGroup[] = [
         courseLink:
           'https://www.semrush.com/academy/courses/technical-seo-course-with-bastian-grimm/',
         certificateLink:
-          'https://static.semrush.com/academy/certificates/26832e9b0f/conor-crutchley_2.pdf',
+          'https://static.semrush.com/academy/certificates/26832e9b0f/steven-yu_2.pdf',
         thumbnail: {
           src: SemrushBastianGrimmYellow,
           alt: 'Bastian Grimm from Semrush on a yellow background',
@@ -283,7 +283,7 @@ export const certificateGroups: ICertificateGroup[] = [
       //   courseLink:
       //     'https://www.semrush.com/academy/courses/mobile-seo-course-with-greg-gifford/',
       //   certificateLink:
-      //     'https://static.semrush.com/academy/certificates/4657374d39/conor-crutchley_2.pdf',
+      //     'https://static.semrush.com/academy/certificates/4657374d39/steven-yu_2.pdf',
       //   thumbnail: {
       //     src: '',
       //     alt: '',
@@ -298,7 +298,7 @@ export const certificateGroups: ICertificateGroup[] = [
         courseLink:
           'https://www.semrush.com/academy/courses/craft-of-mobile-seo/',
         certificateLink:
-          'https://static.semrush.com/academy/certificates/d82d264c5a/conor-crutchley_15.pdf',
+          'https://static.semrush.com/academy/certificates/d82d264c5a/steven-yu_15.pdf',
         thumbnail: {
           src: SemrushCrystalCarterPink,
           alt: 'Crystal Carter from Semrush on a pink background',
@@ -313,7 +313,7 @@ export const certificateGroups: ICertificateGroup[] = [
         courseLink:
           'https://www.semrush.com/academy/courses/local-seo-course-with-greg-gifford/',
         certificateLink:
-          'https://static.semrush.com/academy/certificates/88e5a1363e/conor-crutchley_1.pdf',
+          'https://static.semrush.com/academy/certificates/88e5a1363e/steven-yu_1.pdf',
         thumbnail: {
           src: SemrushGregGiffordPink,
           alt: 'Greg Gifford from Semrush on a pink background',
@@ -328,7 +328,7 @@ export const certificateGroups: ICertificateGroup[] = [
         courseLink:
           'https://www.semrush.com/academy/courses/how-to-outrank-your-competition-in-local-search/',
         certificateLink:
-          'https://static.semrush.com/academy/certificates/38fc954d38/conor-crutchley_4.pdf',
+          'https://static.semrush.com/academy/certificates/38fc954d38/steven-yu_4.pdf',
         thumbnail: {
           src: SemrushWesMcDowellGreen,
           alt: 'Wes McDowelll from Semrush on a green background',
@@ -345,7 +345,7 @@ export const certificateGroups: ICertificateGroup[] = [
       //   courseLink:
       //     'https://www.semrush.com/academy/courses/keyword-research-course-with-greg-gifford/',
       //   certificateLink:
-      //     'https://static.semrush.com/academy/certificates/61735ae4c2/conor-crutchley_2.pdf',
+      //     'https://static.semrush.com/academy/certificates/61735ae4c2/steven-yu_2.pdf',
       //   thumbnail: {
       //     src: '',
       //     alt: '',
@@ -362,7 +362,7 @@ export const certificateGroups: ICertificateGroup[] = [
       //   courseLink:
       //     'https://www.semrush.com/academy/courses/keyword-research-with-semrush-step-by-step-guide/',
       //   certificateLink:
-      //     'https://static.semrush.com/academy/certificates/3898c9a1c7/conor-crutchley_1.pdf',
+      //     'https://static.semrush.com/academy/certificates/3898c9a1c7/steven-yu_1.pdf',
       //   thumbnail: {
       //     src: '',
       //     alt: '',
@@ -379,7 +379,7 @@ export const certificateGroups: ICertificateGroup[] = [
       //   courseLink:
       //     'https://www.semrush.com/academy/courses/backlink-management-course-with-greg-gifford/',
       //   certificateLink:
-      //     'https://static.semrush.com/academy/certificates/eafe8b2a61/conor-crutchley_2.pdf',
+      //     'https://static.semrush.com/academy/certificates/eafe8b2a61/steven-yu_2.pdf',
       //   thumbnail: {
       //     src: '',
       //     alt: '',
@@ -397,7 +397,7 @@ export const certificateGroups: ICertificateGroup[] = [
       //   courseLink:
       //     'https://www.semrush.com/academy/courses/boost-website-authority-with-semrush-link-building-tools/',
       //   certificateLink:
-      //     'https://static.semrush.com/academy/certificates/9d7eda687b/conor-crutchley_1.pdf',
+      //     'https://static.semrush.com/academy/certificates/9d7eda687b/steven-yu_1.pdf',
       //   thumbnail: {
       //     src: '',
       //     alt: '',
@@ -412,7 +412,7 @@ export const certificateGroups: ICertificateGroup[] = [
         courseLink:
           'https://www.semrush.com/academy/courses/content-led-seo-course-with-brian-dean/',
         certificateLink:
-          'https://static.semrush.com/academy/certificates/783de16fcf/conor-crutchley_2.pdf',
+          'https://static.semrush.com/academy/certificates/783de16fcf/steven-yu_2.pdf',
         thumbnail: {
           src: SemrushBrianDeanGreen,
           alt: 'Brian Dean from Semrush on a green background',
@@ -427,7 +427,7 @@ export const certificateGroups: ICertificateGroup[] = [
         courseLink:
           'https://www.semrush.com/academy/courses/ai-for-marketing-course/',
         certificateLink:
-          'https://static.semrush.com/academy/certificates/0a96dfac05/conor-crutchley_26.pdf',
+          'https://static.semrush.com/academy/certificates/0a96dfac05/steven-yu_26.pdf',
         thumbnail: {
           src: SemrushMichaelOlayePurple,
           alt: 'Michael Olaye from Semrush on a purple background',
@@ -442,7 +442,7 @@ export const certificateGroups: ICertificateGroup[] = [
         courseLink:
           'https://www.semrush.com/academy/courses/seo-strategy-for-in-house-marketers/',
         certificateLink:
-          'https://static.semrush.com/academy/certificates/f32cc094f9/conor-crutchley_17.pdf',
+          'https://static.semrush.com/academy/certificates/f32cc094f9/steven-yu_17.pdf',
         thumbnail: {
           src: SemrushKevinIndigPink,
           alt: 'Kevin Indig from Semrush on a pink background',
@@ -460,7 +460,7 @@ export const certificateGroups: ICertificateGroup[] = [
       //   courseLink:
       //     'https://www.semrush.com/academy/courses/competitive-analysis-and-keyword-research-course/',
       //   certificateLink:
-      //     'https://static.semrush.com/academy/certificates/0e6f2d7c31/conor-crutchley_1.pdf',
+      //     'https://static.semrush.com/academy/certificates/0e6f2d7c31/steven-yu_1.pdf',
       //   thumbnail: {
       //     src: '',
       //     alt: '',

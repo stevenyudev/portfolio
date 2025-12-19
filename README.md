@@ -1,10 +1,5 @@
-# Portfolio for Conor Crutchley
+# Portfolio for Steven Yu
 
-<<<<<<< HEAD
-[Live Demo](https://your-domain.com)
-
-=======
->>>>>>> abd20b6cd7b4ccae1731799691e7c1e7fd831cb1
 A personal portfolio website built to showcase my skills, projects, experience and certifications that have made me the developer I am today.
 
 ---
@@ -75,21 +70,6 @@ Prerequisites:
 - Node.js v24 or higher
 - npm installed globally
 
-<<<<<<< HEAD
-=======
-Steps:
-
-```bash
-git clone https://github.com/stevenyudev/portfolio
-
-npm install
-
-npm run dev # start local dev server
-```
-
----
-
->>>>>>> abd20b6cd7b4ccae1731799691e7c1e7fd831cb1
 ## Usage
 
 Once running locally, open `http://localhost:3000` in your browser.
@@ -138,12 +118,3 @@ To deploy, this uses **Vercel**. The deployment steps are: … (if applicable)
 - There's a limit on how many emails can be sent per month for free using email js. Whilst this is a small site and it should be ok, if someone were to spam the form with emails, it could prevent receiving genuine emails when a user fills in the form. Need to put in deterrents to prevent spam and potentially look into other forms of sending the email.
 
 ---
-<<<<<<< HEAD
-
-## Credits
-
-- Fonts from Google Fonts
-
----
-=======
->>>>>>> abd20b6cd7b4ccae1731799691e7c1e7fd831cb1

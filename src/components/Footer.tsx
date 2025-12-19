@@ -16,7 +16,7 @@ const Footer = () => {
       className={`flex flex-column flex-between-center ${styles['footer']}`}
     >
       <SocialLinks />
-      <p>Designed and built by Conor Crutchley &copy; {today.getFullYear()}</p>
+      <p>Designed and built by Steven Yu &copy; {today.getFullYear()}</p>
     </footer>
   );
 };

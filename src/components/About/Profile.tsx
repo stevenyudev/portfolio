@@ -11,7 +11,7 @@ const Profile = () => {
       <img
         fetchPriority="high"
         src={profileImg}
-        alt="conor crutchley in salmon blazer and pink shirt with green gradient"
+        alt="Steven Yu in salmon blazer and pink shirt with green gradient"
         width={410}
         // height={461}
       />
