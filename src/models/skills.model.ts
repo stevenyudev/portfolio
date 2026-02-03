@@ -17,8 +17,10 @@ export interface ISpecificSkill {
 export type SpecificSkillTitles =
   | '.Net'
   | 'Astro.js'
+  | 'AWS'
   | 'Azure'
   | 'Azure DevOps'
+  | 'Big Data'
   | 'C#'
   | 'CI/CD Pipelines'
   | 'Cross Browser Compatibility'
@@ -30,6 +32,7 @@ export type SpecificSkillTitles =
   | 'GitHub/GitHub Actions'
   | 'GSAP'
   | 'HTML5'
+  | 'Java'
   | 'JavaScript'
   | 'Lighthouse'
   | 'MUI'
@@ -41,6 +44,7 @@ export type SpecificSkillTitles =
   | 'SEO'
   | 'Shadcn'
   | 'SQL'
+  | 'Spring Boot'
   | 'Structured Data'
   | 'Tailwind'
   | 'TanStack Start'
@@ -48,7 +52,14 @@ export type SpecificSkillTitles =
   | 'Visual Basic'
   | 'Visual Studio'
   | 'VS Code'
-  | 'WordPress';
+  | 'WordPress'
+  | 'Vue'
+  | 'Nuxt'
+  | 'TailwindCSS'
+  | 'TypeScript'
+  | 'Firebase'
+  | 'Fabric.js'
+  | 'Node/Express';
 
 export const skills: ISkill[] = [
   {
@@ -94,7 +105,7 @@ export const skills: ISkill[] = [
       {
         key: 'tailwind',
         skill: 'Tailwind',
-        level: 30,
+        level: 80,
         logo: skillLogos.tailwind,
       },
       {
@@ -102,6 +113,60 @@ export const skills: ISkill[] = [
         skill: 'GSAP',
         level: 25,
         logo: skillLogos.gsap,
+      },
+      {
+        key: 'astro',
+        skill: 'Astro.js',
+        level: 50,
+        logo: skillLogos.astro,
+      },
+      {
+        key: 'gatsby',
+        skill: 'Gatsby.js',
+        level: 40,
+        logo: skillLogos.gatsby,
+      },
+      {
+        key: 'mui',
+        skill: 'MUI',
+        level: 75,
+        logo: skillLogos.mui,
+      },
+      {
+        key: 'shadcn',
+        skill: 'Shadcn',
+        level: 70,
+        logo: skillLogos.shadcn,
+      },
+      {
+        key: 'tanstack',
+        skill: 'TanStack Start',
+        level: 60,
+        logo: skillLogos.tanstack,
+      },
+      {
+        key: 'cross-browser',
+        skill: 'Cross Browser Compatibility',
+        level: 85,
+        logo: skillLogos.crossBrowser,
+      },
+      {
+        key: 'lighthouse',
+        skill: 'Lighthouse',
+        level: 70,
+        logo: skillLogos.lighthouse,
+      },
+      {
+        key: 'seo',
+        skill: 'SEO',
+        level: 75,
+        logo: skillLogos.seo,
+      },
+      {
+        key: 'structured-data',
+        skill: 'Structured Data',
+        level: 70,
+        logo: skillLogos.structuredData,
       },
     ],
   },
@@ -133,6 +198,36 @@ export const skills: ISkill[] = [
         level: 60,
         logo: skillLogos.mysql,
       },
+      {
+        key: 'dotnet',
+        skill: '.Net',
+        level: 65,
+        logo: skillLogos.dotNet,
+      },
+      {
+        key: 'entity-framework',
+        skill: 'Entity Framework',
+        level: 55,
+        logo: skillLogos.entityFramework,
+      },
+      {
+        key: 'directus',
+        skill: 'Directus',
+        level: 50,
+        logo: skillLogos.directus,
+      },
+      {
+        key: 'rest',
+        skill: 'REST APIs',
+        level: 80,
+        logo: skillLogos.rest,
+      },
+      {
+        key: 'wordpress',
+        skill: 'WordPress',
+        level: 65,
+        logo: skillLogos.wordpress,
+      },
     ],
   },
   {
@@ -162,6 +257,30 @@ export const skills: ISkill[] = [
         skill: 'Visual Studio',
         level: 100,
         logo: skillLogos.visualStudio,
+      },
+      {
+        key: 'azure',
+        skill: 'Azure',
+        level: 50,
+        logo: skillLogos.azure,
+      },
+      {
+        key: 'devops',
+        skill: 'Azure DevOps',
+        level: 55,
+        logo: skillLogos.devops,
+      },
+      {
+        key: 'cicd-pipelines',
+        skill: 'CI/CD Pipelines',
+        level: 60,
+        logo: skillLogos.cicdPipelines,
+      },
+      {
+        key: 'visual-basic',
+        skill: 'Visual Basic',
+        level: 70,
+        logo: skillLogos.visualBasic,
       },
     ],
   },

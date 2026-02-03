@@ -16,19 +16,32 @@ const About = () => {
       <div className={`flex flex-column-to-row ${styles['about']}`}>
         <div>
           <p>
-            I am a hardworking and innovative front-end developer with over 6 years experience
-            creating web applications that not only look good, but also load
-            quickly, are accessible, and are developed with SEO in mind.
+            I am a <strong>Senior Full Stack Engineer</strong> with extensive
+            experience building <strong>AI-driven web applications</strong>,
+            financial data pipelines, and scalable{' '}
+            <strong>SaaS platforms</strong>.
           </p>
+
           <p>
-            I&apos;ve developed this portfolio to showcase some of the
-            achievements I have made over the years so feel free to have a look
-            around and reach out if my work catches your eye.
+            My core expertise includes <strong>Python</strong> and{' '}
+            <strong>JavaScript / TypeScript</strong>,{' '}
+            <strong>React-based dashboards</strong>, <strong>Node.js</strong>{' '}
+            and <strong>Flask</strong> backend services, and cloud deployment
+            across <strong>AWS</strong> and <strong>GCP</strong>.
           </p>
+
           <p>
-            I&apos;m currently looking for a new position so feel free to reach
-            out and we can discuss any opportunities in which I may be of
-            service.
+            I specialize in <strong>data integration</strong>, automation of
+            investment workflows, and <strong>AI-assisted analytics</strong> for
+            financial operations teams, with a strong focus on security,
+            performance, and scalability in regulated environments.
+          </p>
+
+          <p>
+            I have a proven track record of streamlining complex data flows,
+            automating reporting, and significantly improving operational
+            efficiency through well-architected full-stack and AI-powered
+            solutions.
           </p>
         </div>
         <div className={`flex flex-column ${styles['about-profile']}`}>

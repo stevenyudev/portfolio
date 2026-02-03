@@ -20,10 +20,11 @@ export const projects: IProject[] = [
     excerpt: (
       <>
         <p>
-          A React rendering engine that takes content from Contentful CMS and
-          renders dynamic webpages. Having layout information and web content
-          retrieved from Contentful enables publishing flexible, dynamic web
-          pages without the code deployment.
+          I built this site using a modern React / Next.js frontend optimized
+          for SEO, accessibility, and performance, backed by Node.js-based APIs
+          and cloud-native services. The platform is deployed on AWS/GCP with
+          CDN, caching, and security best practices to reliably support high
+          traffic, personalization, and enterprise-scale operations.{' '}
         </p>
       </>
     ),
@@ -61,6 +62,68 @@ export const projects: IProject[] = [
     siteLink: 'https://www.omers.com/',
     skills: ['TanStack Start', 'React', 'TypeScript', 'Tailwind', 'Shadcn'],
     thumbnail: thumbnails.omers,
+  },
+  {
+    key: 'amadeus',
+    title: 'Amadeus',
+    excerpt: (
+      <>
+        <p>
+          A modern travel technology platform built with a React frontend
+          delivering a seamless and responsive user experience optimized for
+          global users. The backend is powered by a scalable Java Spring Boot
+          architecture to support mission-critical travel operations. Deployed
+          on AWS/Azure cloud infrastructure, it efficiently handles massive
+          traffic and real-time data processing. The platform integrates a
+          robust API ecosystem and big data analytics pipelines to securely
+          connect travel suppliers and partners worldwide.{' '}
+        </p>
+      </>
+    ),
+    githubLink: '',
+    siteLink: 'https://amadeus.com/',
+    skills: [
+      'React',
+      'Java',
+      'Spring Boot',
+      'AWS',
+      'Azure',
+      'REST APIs',
+      'Big Data',
+    ],
+    thumbnail: thumbnails.amadeus,
+  },
+  {
+    key: 'siteauditpro',
+    title: 'SiteAuditPro',
+    excerpt: (
+      <>
+        <p>
+          Site Audit Pro helps over 40,000 businesses worldwide improve their
+          productivity by making audits and inspections quick to carry out and
+          simple to manage. Site Audit Pro makes recording issues, taking
+          photos, adding assignees and sharing customisable reports easier and
+          faster than ever before. Site Audit Pro will help you collate and
+          share your findings on the go with customised reports to add a
+          personal and professional touch whenever you need to capture and
+          report important data. For example, Site Audit Pro is great for
+          performing a safety inspection, snagging issues, creating a punch
+          list, creating checklists, site walks, or providing a quotation.{' '}
+        </p>
+      </>
+    ),
+    githubLink: '',
+    siteLink: 'https://siteauditpro.com/',
+    skills: [
+      'Vue',
+      'Nuxt',
+      'TailwindCSS',
+      'TypeScript',
+      'Firebase',
+      'Fabric.js',
+      'Node/Express',
+    ],
+    thumbnail: thumbnails.siteauditpro,
   },
   {
     key: 'care-club',

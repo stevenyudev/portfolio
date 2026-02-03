@@ -19,13 +19,15 @@ const ProjectCard = ({ project }: { project: IProject }) => {
   return (
     <Card className={`flex flex-column ${styles['project-card']}`}>
       {/* Project thumbnail and title */}
-      <img
-        src={project.thumbnail.src}
-        alt={project.thumbnail.alt}
-        width={686}
-        className={styles['project-img']}
-        loading="lazy"
-      />
+      {project.thumbnail && (
+        <img
+          src={project.thumbnail.src}
+          alt={project.thumbnail.alt}
+          width={686}
+          className={styles['project-img']}
+          loading="lazy"
+        />
+      )}
       <h3>{project.title}</h3>
 
       {/* Skills relating to project */}
